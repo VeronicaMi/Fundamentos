@@ -22,10 +22,10 @@ export class Encabezado extends React.Component{
         let display = this.state.isLoggedIn ? 'Ejemplo de uso' : this.props.message;
         return(
             <View style = {styles.headStyle} >
-                <Image>
+                <Image
                     style={styles.logoStyle}
                     source={require('./img/ipn.png')}
-                </Image>
+                />
             <Text style={styles.headText} 
                     onPress={this.toggleUser}> {display} </Text>
             </View>
@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
     },
 
     logoStyle:{
-        flex:1,
-        width: undefined,
-        height: undefined,
+        flex: 1,
+        width: 50,
+        height: 50,
     }
 })

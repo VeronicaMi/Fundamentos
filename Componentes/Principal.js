@@ -1,15 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Encabezado } from '../Secciones/Encabezado';
+import { Hero } from '../Secciones/Hero.js';
+import { Menu } from '../Secciones/Menu.js';
 
 export class Principal extends React.Component {
   render(){
     return (
       <View style={styles.container}> 
-         <Encabezado message = 'Presiona el login' />
-        <Text style={{flex:8}}>Open up App.js to start working on your app!</Text>
-        <Text style={{flex:6}}>Segunda prueba de texto</Text>
-       
+        <Encabezado message = 'Presiona el login' />
+        <Hero />
+        <Menu />       
       </View>
     );
   }
