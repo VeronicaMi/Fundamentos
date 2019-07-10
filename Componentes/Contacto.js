@@ -29,7 +29,7 @@ export class Contacto extends React.Component {
     sendMessage = ()=> {
         Alert.alert(this.state.nombre, this.state.msg);
         this.props.navigation.goBack();
-    }
+    };
 
     render(){
         return (

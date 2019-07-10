@@ -6,7 +6,7 @@ import {
     Text, 
     Alert
 } from 'react-native';
-import { Contacto } from '../Componentes/Contacto';
+import { Contacto } from '../Componentes/Contacto.js';
 
 export class Menu extends React.Component{
     onPress = ()=>{
