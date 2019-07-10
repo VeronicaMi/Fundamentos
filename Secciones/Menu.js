@@ -6,6 +6,7 @@ import {
     Text, 
     Alert
 } from 'react-native';
+import { Contacto } from '../Componentes/Contacto';
 
 export class Menu extends React.Component{
     onPress = ()=>{
@@ -28,7 +29,7 @@ export class Menu extends React.Component{
                     <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
                         <Text style={styles.buttonText}>BLOG</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('ContactoRT')}>
                         <Text style={styles.buttonText}>CONTACTO</Text>
                     </TouchableOpacity>
                 </View>
