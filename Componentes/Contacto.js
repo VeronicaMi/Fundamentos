@@ -32,9 +32,10 @@ export class Contacto extends React.Component {
     };
 
     render(){
+        const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
-                <Encabezado message = 'Presionaste el login' />
+                <Encabezado navigate = {navigate} message = 'Presionaste el login' />
                 <Text style={styles.heading}>Contactame</Text>
                 
                 <TextInput 

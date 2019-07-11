@@ -20,7 +20,7 @@ export class Menu extends React.Component{
                     <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
                         <Text style={styles.buttonText}>LECCIONES</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('RegistroRT')}>
                         <Text style={styles.buttonText}>REGISTRO</Text>
                     </TouchableOpacity>
                 </View>

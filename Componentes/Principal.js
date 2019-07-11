@@ -16,7 +16,7 @@ export class Principal extends React.Component {
 
     return (
       <View style={styles.container}> 
-        <Encabezado message = 'Presiona el login' />
+        <Encabezado navigate = {navigate} message = 'Presiona el login' />
         <Hero />
         <Menu navigate = {navigate} />       
       </View>
