@@ -5,6 +5,8 @@ import { StackNavigator } from 'react-navigation';
 
 import { Registro } from './Componentes/Registro.js';
 import { Login } from './Componentes/Login.js';
+import { Quiz } from './Componentes/Quiz.js';
+import { Finish } from './Componentes/QuizFinish.js';
 
 const Rutas = StackNavigator({
   PrincipalRT: {
@@ -19,7 +21,13 @@ const Rutas = StackNavigator({
   },
   LoginRT:{
     screen : Login
-  }
+  },
+  QuizRT:{
+    screen: Quiz
+  },
+  FinishRT:{
+    screen: Finish
+  },
 },
   {
     initialRouteName: 'PrincipalRT'

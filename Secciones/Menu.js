@@ -33,6 +33,16 @@ export class Menu extends React.Component{
                         <Text style={styles.buttonText}>CONTACTO</Text>
                     </TouchableOpacity>
                 </View>
+
+                <View style={styles.buttonRow}>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
+                        <Text style={styles.buttonText}>EXTRA</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('QuizRT')}>
+                        <Text style={styles.buttonText}>CUESTIONARIO</Text>
+                    </TouchableOpacity>
+                </View>
+
             </View>
         );
     }
